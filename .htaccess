@@ -1,0 +1,14 @@
+DirectoryIndex index.html index.htm index.shtml index.php index.cgi
+Options -Indexes
+
+#サイト全体を https://のURLに統一
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 /404.html
+
+# index.html（php）無しのURLに統一
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^.*/index.(html|htm|php)
+RewriteRule ^(.*)index.(html|htm|php)$ https://level-g.co.jp/$1 [R=301,L]

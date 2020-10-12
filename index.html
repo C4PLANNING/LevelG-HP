@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>株式会社レベル・ジー | 舞台照明プラン／デザイン／オペレート</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="株式会社レベル・ジー | 舞台照明プラン／デザイン／オペレート">
+
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.59.1" />
+
+  <!-- plugins -->
+
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+
+  <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+
+
+  <!-- Main Stylesheet -->
+
+  <link rel="stylesheet" href="scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Slider Pro-->
+  <link rel="stylesheet" type="text/css" href="dist/css/slider-pro.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css" media="screen" />
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> -->
+
+  <style>
+    .title_wrap {
+      /* 親要素 */
+      letter-spacing: -.4em;
+      /* 文字間を詰めて隙間をなくす */
+    }
+
+    .title_wrap .title_block {
+      /* 子要素 */
+      display: inline-block;
+      letter-spacing: normal;
+      /* 文字間を元に戻す */
+    }
+  </style>
+  <script type="text/javascript" src="libs/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="dist/js/jquery.sliderPro.min.js"></script>
+  <script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function ($) {
+      $('#slider-pro').sliderPro({
+        width: '100%',
+        height: '100%',
+        forceSize: 'fullWindow',
+        autoplayOnHover: 'none',
+        fadeArrows: false,
+        slideDistance: 0 //スライド同士の距離
+      });
+
+      // instantiate fancybox when a link is clicked
+      $(".slider-pro").each(function () {
+        var slider = $(this);
+
+        slider.find(".sp-image").parent("a").on("click", function (event) {
+          event.preventDefault();
+
+          if (slider.hasClass("sp-swiping") === false) {
+            var sliderInstance = slider.data("sliderPro"),
+              isAutoplay = sliderInstance.settings.autoplay;
+
+            $.fancybox.open(slider.find(".sp-image").parent("a"), {
+              index: $(this).parents(".sp-slide").index(),
+              afterShow: function () {
+                if (isAutoplay === true) {
+                  sliderInstance.settings.autoplay = false;
+                  sliderInstance.stopAutoplay();
+                }
+              },
+              afterClose: function () {
+                if (isAutoplay === true) {
+                  sliderInstance.settings.autoplay = true;
+                  sliderInstance.startAutoplay();
+                }
+              }
+
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+
+  </div>
+  <!-- preloader end -->
+
+  <header class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <nav class="navbar">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <img src="images/logo.svg" alt="Logo" class="img-responsive">
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/" class="current-page">Home</a></li>
+
+
+
+                <li><a href="about/">About</a></li>
+
+
+
+                <li><a href="business/">Business</a></li>
+
+
+
+                <li><a href="company/">Company</a></li>
+
+
+
+                <li><a href="access/">Access</a></li>
+
+
+
+                <li><a href="contact/">Contact</a></li>
+
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+  <section class="slider">
+    <!-- <div id="Light"> -->
+    <!-- <div class="dark-mask"> -->
+    <div class="intro-body">
+
+      <div class="Container">
+        <div id="slider-pro" class="slider-pro">
+          <div class="sp-slides">
+            <div class="sp-slide">
+              <img class="sp-image" src="src/css/images/blank.gif" data-src="images/budohkan2.jpg" />
+            </div>
+            <div class="sp-slide">
+              <img class="sp-image" src="src/css/images/blank.gif" data-src="images/budohkan3.jpg" />
+            </div>
+            <div class="sp-slide">
+              <img class="sp-image" src="src/css/images/blank.gif" data-src="images/budohkan4.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="Logos">
+          <div class="title">
+            <h1 class="Logo">We are Lighting Company</h1>
+            <div class="subtitle">
+              <!-- <h2>We will handle the planning, design and operation of the stage lighting.</h2> -->
+              <h2 class="title_wrap">
+                <span class="title_block">Please contact us for</span>
+                <span class="title_block">planning, design</span>
+                <span class="title_block">and operations</span>
+                <span class="title_block">in stage lighting.</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="LightContainer">
+          <!-- <div class="Light"></div> -->
+        </div>
+
+        <div class="Smoke1"></div>
+        <div class="Smoke2"></div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-manu">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="about/">About</a></li>
+
+              <li><a href="business/">Business</a></li>
+
+              <li><a href="company/">Company</a></li>
+
+              <li><a href="access/">Access</a></li>
+
+              <li><a href="contact/">Contact</a></li>
+
+            </ul>
+          </div>
+          <p class="copyright">Copyright &copy; LEVEL-G CO.,Ltd All Rights
+            Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="plugins/jQuery/jquery.min.js"></script>
+
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <script src="plugins/slick/slick.min.js"></script>
+
+  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <script src="plugins/hero/jquery.easing.min.js"></script>
+
+
+
+
+  <script src="js/script.min.js"></script>
+
+
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-156818226-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+
+  <script>
+    var hidden, visibilityChange;
+    var hideOnboarding = false;
+    function toggle() {
+      document.body.classList.toggle('on');
+      if (hideOnboarding) {
+        hideOnboarding = false;
+      }
+    }
+
+    function run() {
+      toggle();
+      hideOnboarding = true;
+    }
+    run();
+    // setInterval(function () {
+
+    //   setTimeout(run, 6500)
+    //   setTimeout(function () {
+
+    //     setTimeout(run, 2000)
+    //   }, 3500)
+
+    // }, 10000);
+  </script>
+</body>
+
+</html>
