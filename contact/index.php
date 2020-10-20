@@ -132,23 +132,15 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="../">Home</a></li>
 
-
-
                 <li><a href="../about/">About</a></li>
-
-
 
                 <li><a href="../business/">Business</a></li>
 
-
-
                 <li><a href="../company/">Company</a></li>
 
-
+                <li><a href="https://naughty-beaver-6f1db0.netlify.com">Design/Plan</a></li>
 
                 <li><a href="../access/">Access</a></li>
-
-
 
                 <li><a href="../contact/" class="current-page">Contact</a></li>
               </ul>
@@ -177,7 +169,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
   <section class="contact-form">
     <div class="container">
       <div class="row">
-
+        <p>*は必須項目です</p>
         <!-- ▼ Lisket メールフォーム簡単作成ツール http://app.lisket.jp/form_maker ここから ▼ -->
 
         <script src="../plugins/jQuery/jquery.min.js"></script>
@@ -220,6 +212,13 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                     value="a234f031591001436d04ddff589bdbc251849847" />
                 </div>
               </div>
+              <div class="form-group-2">
+                <div id="data_field_5" class="check-privacy-policy">
+                  
+                  <p style="cursor: pointer;"><input type="checkbox" required="required" id="data_field_5_0" name="data[field_5][]" value="" />*<a onclick="ppfadeIn(); return false;" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</p>
+                </div>
+                
+              </div>
              <!-- 認証チェックのフォームが表示されます -->
               <div class="g-recaptcha" data-callback="clearcall" data-sitekey="<?php eh(RECAPTCHA_SITE_KEY) ?>"></div>
               <br>
@@ -229,7 +228,9 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
               <!-- <div class="form-group">
                 <button type="reset" class="btn btn-default">Reset</button>
               </div> -->
+              
             </div>
+            
           </div>
         </form>
       </div>
@@ -238,8 +239,8 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
       <!-- ▲ Lisket メールフォーム簡単作成ツール http://app.lisket.jp/form_maker ここまで ▲ -->
 
       <div class="h-30"></div>
-      <p>*は必須項目です</p>
-      <p><a href="../privacy.html" style="text-decoration: underline;">プライバシーポリシー</a>をご確認の上、送信をお願いいたします。</p>
+
+      
     </div>
   </section>
 
@@ -256,6 +257,8 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
               <li><a href="../business/">Business</a></li>
 
               <li><a href="../company/">Company</a></li>
+
+              <li><a href="https://naughty-beaver-6f1db0.netlify.com">Design/Plan</a></li>
 
               <li><a href="../access/">Access</a></li>
 
@@ -306,9 +309,9 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     
     //認証にチェックされたら送信ボタンを表示する
     function clearcall(code) {
-        if(code !== ""){
-            $('.submit-btn').fadeIn();
-        }
+      if(code !== ""){
+          $('.submit-btn').fadeIn();
+      }
     }
   </script>
 </body>
