@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 define('RECAPTCHA_SITE_KEY', '6LcP69kUAAAAAP4X933FE2nntz4PuRbYRzsZ__i1'); // reCAPTCHAのサイトキー (Google Developer Consoleから取得したものをセットしてください)
 define('RECAPTCHA_SECRET_KEY', '6LcP69kUAAAAADWF1uqiKKk0lvMtezPTOqa8-YXT'); // reCAPTCHAのシークレットキー (同上)
@@ -63,7 +63,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     $result = recaptchaSimple($gRecapchaResponse); // reCAPTCHA 検証
 }
 
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -215,7 +215,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
               <div class="form-group-2">
                 <div id="data_field_5" class="check-privacy-policy">
                   
-                  <p style="cursor: pointer;"><input type="checkbox" required="required" id="data_field_5_0" name="data[field_5][]" value="" />*<a onclick="ppfadeIn(); return false;" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</p>
+                  <p style="cursor: pointer;"><input type="checkbox" required="required" id="data_field_5_0" name="data[field_5][]" value="" style="margin-right: 10px;"/>*&nbsp;<a style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</p>
                 </div>
                 
               </div>
