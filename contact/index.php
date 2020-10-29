@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 define('RECAPTCHA_SITE_KEY', '6LcP69kUAAAAAP4X933FE2nntz4PuRbYRzsZ__i1'); // reCAPTCHAのサイトキー (Google Developer Consoleから取得したものをセットしてください)
 define('RECAPTCHA_SECRET_KEY', '6LcP69kUAAAAADWF1uqiKKk0lvMtezPTOqa8-YXT'); // reCAPTCHAのシークレットキー (同上)
@@ -63,7 +63,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     $result = recaptchaSimple($gRecapchaResponse); // reCAPTCHA 検証
 }
 
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -138,7 +138,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 
                 <li><a href="../company/">Company</a></li>
 
-                <li><a href="https://naughty-beaver-6f1db0.netlify.com">Design/Plan</a></li>
+                <li><a href="https://level-g-blog.netlify.com">Design/Plan</a></li>
 
                 <li><a href="../access/">Access</a></li>
 
@@ -258,7 +258,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 
               <li><a href="../company/">Company</a></li>
 
-              <li><a href="https://naughty-beaver-6f1db0.netlify.com">Design/Plan</a></li>
+              <li><a href="https://level-g-blog.netlify.com">Design/Plan</a></li>
 
               <li><a href="../access/">Access</a></li>
 
