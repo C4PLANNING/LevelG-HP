@@ -177,7 +177,7 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
         <script src="../plugins/garlic/garlic.js"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-        <form class="lisket-form-maker-form" action="//app.lisket.jp/form_maker/message/12803" method="post" data-persist="garlic">
+        <form class="lisket-form-maker-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyk4mm0PueN2LVUNF2fn1hHpT4zX4OkWImw5PoLSvC1nM3-Q/formResponse" method="post" data-persist="garlic">
           <script type="text/javascript" src="//app.lisket.jp/bundles/lisketformmaker/js/form.js"
             charset="utf-8"></script>
           
@@ -185,18 +185,18 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
           <div class="col-md-6 col-sm-12">
             <div class="block">
               <div class="form-group">
-                <input type="text" id="data_name" name="data[name]" required="required" placeholder="*Name"
+                <input type="text" id="data_name" name="entry.1549444636" required="required" placeholder="*Name"
                   class="form-control" />
               </div>
               <div class="form-group">
-                <input type="email" id="data_mail" name="data[mail]" required="required" placeholder="*Email Address"
+                <input type="email" id="data_mail" name="entry.773323208" required="required" placeholder="*Email Address"
                   class="form-control" />
               </div>
               <div class="form-group">
-                <input type="text" id="data_field_2" name="data[field_2]" placeholder="Tel" class="form-control" />
+                <input type="text" id="data_field_2" name="entry.1008534227" placeholder="Tel" class="form-control" />
               </div>
               <div class="form-group">
-                <input type="text" id="data_field_3" name="data[field_3]" required="required" placeholder="*Subject"
+                <input type="text" id="data_field_3" name="entry.816790854" required="required" placeholder="*Subject"
                   class="form-control" />
               </div>
             </div>
@@ -204,25 +204,19 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
           <div class="col-md-6 col-sm-12">
             <div class="block">
               <div class="form-group-2">
-                <textarea id="data_field_4" name="data[field_4]" required="required" rows="4"
+                <textarea id="data_field_4" name="entry.557774929" required="required" rows="4"
                   placeholder="*Your Message" class="form-control"></textarea>
-
-                <div style="display: none">
-                  <input type="hidden" id="data_verification_code" name="data[verification_code]"
-                    value="a234f031591001436d04ddff589bdbc251849847" />
-                </div>
               </div>
               <div class="form-group-2">
                 <div id="data_field_5" class="check-privacy-policy">
-                  
-                  <p style="cursor: pointer;"><input type="checkbox" required="required" id="data_field_5_0" name="data[field_5][]" value="" style="margin-right: 10px;"/>*&nbsp;<a style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</p>
+                  <p style="cursor: pointer;"><input type="checkbox" required="required" id="data_field_5_0" name="entry.1224860340_sentinel" value="" style="margin-right: 10px;"/>*&nbsp;<a style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する</p>
                 </div>
                 
               </div>
              <!-- 認証チェックのフォームが表示されます -->
               <div class="g-recaptcha" data-callback="clearcall" data-sitekey="<?php eh(RECAPTCHA_SITE_KEY) ?>"></div>
               <br>
-              <div class="form-group submit-btn" style="display:none; ">
+              <div class="form-group submit-btn" style="display:none;">
                 <button type="submit" class="btn btn-primary">Send Message</button>
               </div>
               <!-- <div class="form-group">
